@@ -1,4 +1,15 @@
-.square {
-    height: 50px;
-    width: 50px;
+*{
+    box-sizing:border-box;
+}
+.container {
+    width: 800px;
+    
+}
+
+
+.main {
+    
+    display: grid;
+    grid: repeat(10, 50px) / repeat(10, 50px);
+    grid-gap: 2px; 
 }

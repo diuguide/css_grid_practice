@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const main = document.querySelector(".main");
-  const button = document.querySelector("#genColor");
+  const buttonColor = document.querySelector("#genColor");
+  const buttonCircles = document.querySelector("#changeCircles");
+  const buttonSquares = document.querySelector("#changeSquares");
+    const genBoxes = document.querySelector("#genGrid");
+    const numBoxes = 100;
 
   // function to generate random hex code
   function randHex() {
@@ -12,21 +16,49 @@ document.addEventListener("DOMContentLoaded", () => {
     return color;
   }
 
-  //For loop to create 9 boxes
-  for (let i = 0; i < 9; i++) {
+  //For loop to create 25 boxes once every 75ms
+  function generateBoxes() {
+    for (let i = 0; i < numBoxes; i++) {
+      setTimeout(() => {
+        generateBox(i);
+      }, 75 * i);
+    }
+  }
+//generates squar element
+  function generateBox(i) {
     const square = document.createElement("div");
     square.setAttribute("class", "square");
     square.setAttribute("id", i);
     square.style.width = "50px";
-    square.style.heigh = "50px";
+    square.style.height = "50px";
     square.style.backgroundColor = randHex();
     main.appendChild(square);
   }
+  //Button to generate the grid
+  genBoxes.addEventListener("click", () => {
+    generateBoxes();
+    genBoxes.style.display = "none";
+  });
 
-  button.addEventListener("click", () => {
-      for (let i = 0; i < 9; i++) {
-          square = document.getElementById(i);
-          square.style.backgroundColor = randHex();
-      }
+  //Button to change the color of all squares
+  buttonColor.addEventListener("click", () => {
+    for (let i = 0; i < numBoxes; i++) {
+      square = document.getElementById(i);
+      square.style.backgroundColor = randHex();
+    }
+  });
+  //Button to change the shape to circles
+  buttonCircles.addEventListener("click", () => {
+    for (let i = 0; i < numBoxes; i++) {
+      square = document.getElementById(i);
+      square.style.borderRadius = "50%";
+    }
+  });
+  //Button to change back to squares
+  buttonSquares.addEventListener("click", () => {
+    for (let i = 0; i < numBoxes; i++) {
+      square = document.getElementById(i);
+      square.style.borderRadius = "0";
+    }
   });
 });
