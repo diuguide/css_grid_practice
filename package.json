@@ -1,0 +1,20 @@
+{
+  "name": "css_grid_practice",
+  "version": "1.0.0",
+  "description": "Practice Application working with js, css, and grids",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diuguide/css_grid_practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diuguide/css_grid_practice/issues"
+  },
+  "homepage": "https://github.com/diuguide/css_grid_practice#readme"
+}
