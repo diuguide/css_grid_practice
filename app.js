@@ -3,9 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttonColor = document.querySelector("#genColor");
   const buttonCircles = document.querySelector("#changeCircles");
   const buttonSquares = document.querySelector("#changeSquares");
-    const genBoxes = document.querySelector("#genGrid");
-    const numBoxes = 100;
-
+  const genBoxes = document.querySelector("#genGrid");
+  const numBoxes = 100;
+  const animateSquares = document.querySelector("#animateColor");
+  const stopAnimation = document.querySelector("#stopAnimation");
+  let interval;
   // function to generate random hex code
   function randHex() {
     let hexCode = "0123456789ABCDEF";
@@ -24,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 25 * i);
     }
   }
-//generates squar element
+  //generates squar element
   function generateBox(i) {
     const square = document.createElement("div");
     square.setAttribute("class", "square");
@@ -61,4 +63,27 @@ document.addEventListener("DOMContentLoaded", () => {
       square.style.borderRadius = "0";
     }
   });
+
+  //function to change color of boxes
+  function changeColor(i) {
+    square = document.getElementById(i);
+    square.style.backgroundColor = randHex();
+  }
+
+  animateSquares.addEventListener("click", () => {
+    interval = setInterval(change, 250);
+    function change() {
+      for (let i = 0; i < numBoxes; i++) {
+        changeColor(i);
+      }
+    }
+    stopAnimation.addEventListener("click", () => {
+      window.location.reload();
+    });
+  });
+    
+    function growSquares() {
+        squares = document.querySelectorAll(".square");
+        
+  }
 });

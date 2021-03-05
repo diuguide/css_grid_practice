@@ -26,6 +26,9 @@ To use this app navigate to <https://diuguide.github.io/css_grid_practice/>.
 
 1. To change the shape of the circles to squares, click ```Squares```.
 
+1. To animate the color change, click ```Animate Colors```.
+
+1. To stop the animation, either reload the page or click ```Stop Animation```.
 
 
 [back to Table of Contents](#table-of-contents)

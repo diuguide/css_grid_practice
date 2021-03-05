@@ -19,7 +19,7 @@
     border: 1px; 
     border-radius: 10px;
     overflow: hidden;
-    background-color: darkslategray;
+    background-color: rgb(58, 58, 58);
 }
 .buttonGroup {
     margin-left: 30px;
@@ -28,10 +28,16 @@
 #genGrid,
 #genColor,
 #changeCircles,
-#changeSquares {
+#changeSquares,
+#animateColor,
+#stopAnimation {
     width: 127px;
     height: 35px;
     background-color: rgb(108, 103, 136);
     color: rgb(223, 223, 223);
     border-radius: 10px;
+}
+#animateColor {
+    margin-top:3px;
+    margin-left: 30px;
 }
