@@ -14,10 +14,9 @@
 .main {
     margin:auto;
     display: grid;
-    width: 520px;
+    width: 500px;
     grid: repeat(10, 50px) / repeat(10, 50px);
-    grid-gap: 2px;
-    border: 1px groove grey; 
+    border: 1px groove; 
     border-radius: 10px;
     overflow: hidden;
     background-color: darkslategray;
