@@ -16,7 +16,7 @@
     display: grid;
     width: 500px;
     grid: repeat(10, 50px) / repeat(10, 50px);
-    border: 1px groove; 
+    border: 1px; 
     border-radius: 10px;
     overflow: hidden;
     background-color: darkslategray;
