@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //Button to generate the grid
   genBoxes.addEventListener("click", () => {
     generateBoxes();
-    genBoxes.style.display = "none";
+    genBoxes.disabled = "true";
   });
 
   //Button to change the color of all squares

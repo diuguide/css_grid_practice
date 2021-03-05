@@ -1,15 +1,41 @@
 *{
     box-sizing:border-box;
 }
-.container {
-    width: 800px;
-    
+.wrapper {
+    width: 580px;
+    height: 600px;
+    background-color: darkgrey;
+    border: 1px;
+    border-radius: 10px;
+    justify-items: center;
+    align-items: center;
 }
-
-
+.container {
+    padding-top: 20px;
+}
 .main {
-    
+    margin:auto;
     display: grid;
+    width: 520px;
     grid: repeat(10, 50px) / repeat(10, 50px);
-    grid-gap: 2px; 
+    grid-gap: 2px;
+    border: 1px groove grey; 
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: darkslategray;
+}
+.buttonGroup {
+    margin-left: 30px;
+    padding: 2px;
+}
+#genGrid,
+#genColor,
+#changeCircles,
+#changeSquares {
+    margin:auto;
+    width: 127px;
+    height: 35px;
+    background-color: rgb(108, 103, 136);
+    color: rgb(223, 223, 223);
+    border-radius: 10px;
 }
