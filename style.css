@@ -7,8 +7,6 @@
     background-color: darkgrey;
     border: 1px;
     border-radius: 10px;
-    justify-items: center;
-    align-items: center;
 }
 .container {
     padding-top: 20px;
@@ -32,7 +30,6 @@
 #genColor,
 #changeCircles,
 #changeSquares {
-    margin:auto;
     width: 127px;
     height: 35px;
     background-color: rgb(108, 103, 136);

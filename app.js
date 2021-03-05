@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (let i = 0; i < numBoxes; i++) {
       setTimeout(() => {
         generateBox(i);
-      }, 75 * i);
+      }, 25 * i);
     }
   }
 //generates squar element
