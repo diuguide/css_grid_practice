@@ -5,7 +5,7 @@
 
 A simple HTML, CSS, JavaScript Application that generates a grid of randomly colored squares.  The user can change the colors to other random colors, change the shape of the grid items to squares or circles. 
 
-<img src="screenshot_grid.png" width="200px">
+<img src="./images/screenshot_grid.png" width="200px">
 
 ## Table of Contents
 
