@@ -1,16 +1,50 @@
-*{
+*, html{
     box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    display: block;
+    height: 200px;
+    background-image:linear-gradient(to right, rgb(72, 72, 255), darkgrey);
+    color:rgb(209, 209, 209);
+}
+.titleCont {
+    position: relative;
+    top: 140px;
+    left: 20px;
+    height: 45px;
+    width: 275px;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 22.5px;
+}
+.pageTitle {
+    position: relative;
+    text-align: center;
+    font-size: 36px;  
+}
+.gridSystem {
+    position: relative;
+    left: 40px;
+    top: 20px;
+    display: flex;
 }
 .wrapper {
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 50px;
     width: 580px;
     height: 600px;
     background-color: darkgrey;
     border: 1px;
     border-radius: 10px;
-}
-.container {
     padding-top: 20px;
 }
+.column1 {
+    position: relative;
+    top: 30px;
+    width: 400px;
+}
+
 .main {
     margin:auto;
     display: grid;
@@ -41,3 +75,4 @@
     margin-top:3px;
     margin-left: 30px;
 }
+

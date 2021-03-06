@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const animateSquares = document.querySelector("#animateColor");
   const stopAnimation = document.querySelector("#stopAnimation");
   let interval;
+
   // function to generate random hex code
   function randHex() {
     let hexCode = "0123456789ABCDEF";
@@ -81,9 +82,4 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.reload();
     });
   });
-    
-    function growSquares() {
-        squares = document.querySelectorAll(".square");
-        
-  }
 });
